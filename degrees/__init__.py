@@ -5,7 +5,7 @@ import numpy as np
 import os
 import re
 
-class Degrees(Checks):
+class Degrees():
     def spawn_small(self):
         return self.check50.spawn("python3 degrees.py small")
 
@@ -19,5 +19,7 @@ class Degrees(Checks):
 
     @check50.check()
     def check_path(self):
+        check = self.spawn_small()
+        check.stdin("Emma ")
         raise NotImplementedError
 
