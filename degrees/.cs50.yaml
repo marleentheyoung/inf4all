@@ -2,7 +2,8 @@ check50:
   checks: __init__.py
   files:
     - !exclude "*"
-    - !require "output.csv"
+    - !require "util.py"
+    - !require "degrees.py"
   dependencies:
     - "numpy>=1.18.4"
     - "pandas>=1.0.3"
