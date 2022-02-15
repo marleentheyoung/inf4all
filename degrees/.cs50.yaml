@@ -1,11 +1,5 @@
 check50:
-  checks:
-    check_path:
-      - run: python3 degrees.py small
-        stdin: 
-          - Emma Watson
-          - Kevin Bacon
-        stdout: Not connected.
+  checks: __init__.py
   files:
     - !exclude "*"
     - !require "util.py"
