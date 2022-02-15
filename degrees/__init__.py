@@ -13,7 +13,7 @@ import re
 @check50.check()
 def check_path():
     check50.run("python3 degrees.py small")
-
+    
     # code = check50.run("./hello").exit()
     # if code != 0:
     #     raise check50.Failure(f"expected exit code 0, not {code}")
