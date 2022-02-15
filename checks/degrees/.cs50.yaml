@@ -1,6 +1,9 @@
 check50:
-  checks:
-    hello world:
-      - run: python3 hello.py
-        stdout: Hello, world!
-        exit: 0
+  checks: __init__.py
+  files:
+    - !exclude "*"
+    - !require "output.csv"
+  dependencies:
+    - "numpy>=1.18.4"
+    - "pandas>=1.0.3"
+    - "networkx>=2.4"
