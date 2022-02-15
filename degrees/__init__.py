@@ -6,16 +6,16 @@ import os
 import re
 
 
-def spawn_small(self):
+def spawn_small():
     return check50.spawn("python3 degrees.py small")
 
 def spawn_large():
     return check50.spawn("python3 degrees.py large")
 
-@check50.check()
-def exists():
-    """Checking if all files exist."""
-    exists("degrees.py")
+# @check50.check()
+# def exists():
+#     """Checking if all files exist."""
+#     exists("degrees.py")
 
 @check50.check()
 def check_path():
