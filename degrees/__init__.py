@@ -14,8 +14,11 @@ import uuid
 
 @check50.check()
 def check_path():
-    check50.run("python3 degrees.py small").stdin("Emma Watson", prompt=False).stdin("Kevin Bacon", prompt=False)
+    """ Correctly finds path in small dataset """
+    check = check50.run("python3 degrees.py small").stdin("Emma Watson", prompt=False).stdin("Kevin Bacon", prompt=False)
     
+    # Check if path has been found
+    check.stdout("Not connected.")
 
     # code = check50.run("./hello").exit()
     # if code != 0:
