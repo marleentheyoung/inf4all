@@ -14,7 +14,8 @@ import uuid
 
 @check50.check()
 def check_path():
-    check50.run("python3 degrees.py small").stdin("Emma Watson", prompt=True).stdin("Kevin Bacon", prompt=True)
+    check50.run("python3 degrees.py small").stdin("Emma Watson", prompt=False).stdin("Kevin Bacon", prompt=False)
+    
 
     # code = check50.run("./hello").exit()
     # if code != 0:
