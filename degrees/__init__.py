@@ -15,7 +15,7 @@ import uuid
 @check50.check()
 def check_path():
     """ Correctly finds path in small dataset """
-    check = check50.run("python3 degrees.py small").stdin("Emma Watson\nKevin Bacon", prompt=True)
+    check = check50.run("python3 degrees.py small").stdin("Emma Watson", prompt=True).stdin("Kevin Bacon")
 
     
     # Check if path has been found
